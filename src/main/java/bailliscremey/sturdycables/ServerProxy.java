@@ -1,4 +1,4 @@
-package bailliscremey.sturdycables
+package bailliscremey.sturdycables;
 //server proxy for Cables Mod
 
 public class ServerProxy extends CommonProxy
