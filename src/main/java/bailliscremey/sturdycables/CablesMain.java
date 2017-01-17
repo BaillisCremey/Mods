@@ -24,11 +24,6 @@ public class Main
     @EventHandler
     public void init(FMLInitializationEvent e)
     {
-        cableLV = new CableLV(cableLV);
-        GameRegistry.registerBlock();
-        cableMV = new CableMV(cableMV);
-        cableHV = new CableHV(cableHV);
-        
         proxy.init(e);
     }
 
