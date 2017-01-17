@@ -1,6 +1,6 @@
 package bailliscremey.sturdycables.blocks;
 
-public final class SturdyBlock extends Block
+public class SturdyBlock extends Block
 {
     public static Block cableLV;
     public static Block cableMV;
@@ -8,6 +8,20 @@ public final class SturdyBlock extends Block
 
     public static void init()
     {
+        String modid = CablesMain.MODID + "_";
+        cableLV = new CableLV(cableLV);
+        GameRegistry.registerBlock(cableLV, modid + "cableLV");
+        cableMV = new CableMV(cableMV);
+        GameRegistry.registerBlock(cableMV, modid + "cableMV");
+        cableHV = new CableHV(cableHV);
+        GameRegistry.registerBlock(cableHV, modid + "cableHV");
+
         
+    }
+    
+    public SturdyBlock(String name, Material material)
+    {
+        super(material);
+        this.setBlockName(CablesMain.MODID + "_" + name);
     }
 }
