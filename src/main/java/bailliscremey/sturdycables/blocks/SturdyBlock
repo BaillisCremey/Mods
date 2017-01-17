@@ -1,0 +1,6 @@
+package bailliscremey.sturdycables.blocks;
+
+public class SturdyBlock extends Block
+{
+
+}
