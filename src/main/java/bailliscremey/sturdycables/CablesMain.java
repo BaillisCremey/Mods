@@ -10,6 +10,11 @@ public class Main
     @SidedProxy(clientSide = "bailliscremey.sturdycables.ClientProxy", serverSide = "bailliscremey.sturdycables.ServerProxy")
     public static CommonProxy proxy;
 
+    public static Block cableLV;
+    public static Block cableMV;
+    public static Block cableHV;
+    public static Block powerOutlet;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
     {
@@ -19,12 +24,17 @@ public class Main
     @EventHandler
     public void init(FMLInitializationEvent e)
     {
+        cableLV = new CableLV(cableLV);
+        GameRegistry.registerBlock();
+        cableMV = new CableMV(cableMV);
+        cableHV = new CableHV(cableHV);
+        
         proxy.init(e);
     }
 
     @EventHandler
     public void     postInit(FMLPostInitializationEvent e)
     {
-
+        proxy.postInit(e);
     }
 }
