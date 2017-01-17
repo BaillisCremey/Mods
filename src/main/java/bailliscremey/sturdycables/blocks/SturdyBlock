@@ -1,6 +1,13 @@
 package bailliscremey.sturdycables.blocks;
 
-public class SturdyBlock extends Block
+public final class SturdyBlock extends Block
 {
+    public static Block cableLV;
+    public static Block cableMV;
+    public static Block cableHV;
 
+    public static void init()
+    {
+        
+    }
 }
