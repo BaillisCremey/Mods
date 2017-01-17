@@ -6,7 +6,7 @@ public class CommonProxy
 
     public void preInit(FMLPreInitializationEvent e)
     {
-
+        
     }
 
     public void init(FMLInitializationEvent e)
