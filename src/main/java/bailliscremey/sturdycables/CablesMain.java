@@ -1,4 +1,4 @@
-package bailliscremey.cables;
+package bailliscremey.sturdycables;
 //main class for Cables Mod
 
 @Mod(modid="SturdyCables", version="0.0.0")
